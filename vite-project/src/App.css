@@ -1,0 +1,133 @@
+/* Global Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #1a1a2e;
+  color: #e0e0e0;
+  font-family: "Arial", sans-serif;
+  line-height: 1.6;
+}
+
+/* Main Container */
+.app-container {
+  max-width: 900px;
+  margin: 40px auto; /* Centers horizontally */
+  padding: 20px;
+  display: flex; /* Use flexbox */
+  flex-direction: column; /* Stack children vertically */
+  align-items: center; /* Center children horizontally */
+}
+
+/* Header */
+h1 {
+  color: #00d4b4;
+  font-size: 2.5rem;
+  margin-bottom: 20px;
+  text-shadow: 0 0 10px rgba(0, 212, 180, 0.3);
+}
+
+/* Buttons */
+button {
+  padding: 12px 24px;
+  font-size: 1rem;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: transform 0.2s, background-color 0.3s;
+}
+
+button:hover {
+  transform: scale(1.05);
+}
+
+.app-container > button {
+  background-color: #6b48ff;
+  color: #ffffff;
+}
+
+.app-container > button:hover {
+  background-color: #5538cc;
+}
+
+/* Mnemonic Section */
+.mnemonic-section {
+  background-color: #262640;
+  padding: 20px;
+  border-radius: 10px;
+  margin: 30px 0;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.5);
+  width: 100%; /* Full width of container */
+  max-width: 600px; /* Limit width for readability */
+  text-align: center; /* Center text inside */
+}
+
+.mnemonic-section h3 {
+  color: #00d4b4;
+  margin-bottom: 15px;
+}
+
+.mnemonic-text {
+  font-family: "Courier New", monospace;
+  background-color: #1a1a2e;
+  padding: 15px;
+  border-radius: 5px;
+  word-break: break-word;
+  color: #e0e0e0;
+  font-size: 1.1rem;
+}
+
+.mnemonic-section button {
+  background-color: #00d4b4;
+  color: #1a1a2e;
+  margin: 10px 5px;
+}
+
+.mnemonic-section button:hover {
+  background-color: #00b398;
+}
+
+/* Wallets Section */
+.wallets {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+  width: 100%; /* Full width of container */
+  max-width: 600px; /* Match mnemonic section */
+}
+
+.wallet-section {
+  background-color: #262640;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.5);
+  text-align: center; /* Center text inside */
+}
+
+.wallet-section h3 {
+  color: #6b48ff;
+  margin-bottom: 15px;
+}
+
+.wallet-section button {
+  background-color: #00d4b4;
+  color: #1a1a2e;
+}
+
+.wallet-section button:hover {
+  background-color: #00b398;
+}
+
+.wallet-key {
+  font-family: "Courier New", monospace;
+  background-color: #1a1a2e;
+  padding: 10px;
+  margin: 10px 0;
+  border-radius: 5px;
+  color: #e0e0e0;
+  font-size: 1rem;
+  word-break: break-word;
+}
